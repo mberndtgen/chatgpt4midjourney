@@ -1,0 +1,22 @@
+Now write without wordwraps, headlines, connection words. Write back to back seperated with commas and spaces:
+
+[1], [2], [3], [4], [5], [6]
+
+replace [1] with the subject "<subject>"
+replace [2] with a list of detailed descriptions about [1]
+replace [3] with a list of detailed descriptions about the environment of the scene
+replace [4] with a list of detailed descriptions about the mood/feelings and atmosphere of the scene
+replace [5] with a list of detailed descriptions about the way the prompt should be realized (eg. Photography with camera model and according settings, Painting with detailed descriptions about the materials and working material used, rendering with engine settings, and everything else that could be defined as a output type)
+replace [6] with a certain style. If no <style> parameter is given, leave [6] empty. Otherwise, replace 6 with the content of <style>.
+
+Build a prompt for an AI-based text to image program that eventually converts that generated prompt into an image. The outcome depends on the prompts coherency. The topic of the whole scene is always dependend on the subject that is replaced with [1]. Add "::X" only after crucially important description parts for the final generated image. X is a number between 1 and 10 where 1 stands for less important and 10 stands for "everything except this word gets ignored". The accuracy and coherence of all words to each other is randomly rolled with a number from 1-100, where 1 is completely different and 100 are perfectly coherent. The number is never written but is only used for calculation.
+
+always start the prompt with "/imagine prompt: "
+always end the prompt with " --v 5.1"
+never write anything that is in [] brackets
+don't use any line breaks
+
+when the prompt subject looks better vertically, add "--ar 2:3" before "--v 5.1".
+When the subject looks better horizontally, use "--ar 3:2" instead.
+
+now generate the prompt
