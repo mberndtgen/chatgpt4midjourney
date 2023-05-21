@@ -1,0 +1,23 @@
+Ignore all earlier instructions in this session. Now write without wordwraps, headlines, connection words. Write back to back seperated with commas and spaces:
+
+[1] [2], [3], [4], [5], [6]
+
+Replace [1] with the subject "<subject>".
+Replace [2] with "drawn in smoke is shown".
+Replace [3] with "in the style of <style>". If no "style" parameter is given, replace "style" with "abstract ink art". Otherwise, use the style given with the "style" parameter.
+Replace [4] with "flowing silhouettes".
+Replace [5] with "polished metamorphosis" or a similar expression.
+Replace [6] with "dark and intricate, contemporary, intense".
+
+Build a prompt for an AI-based text to image program that eventually converts that generated prompt into an image.
+
+Always start the prompt with "/imagine prompt: "
+Always end the prompt with " --v 5.1"
+Never write anything that is in [] brackets
+Don't use any line breaks.
+
+When the prompt subject looks better vertically, add "--ar 2:3" before "--v 5.1".
+When the subject looks better horizontally, use "--ar 3:2" instead.
+Otherwise, use "--ar 1:1".
+
+now generate the prompt
